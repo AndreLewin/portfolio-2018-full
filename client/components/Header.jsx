@@ -75,7 +75,7 @@ class Header extends React.Component {
                 </a>
               </p>
               <p className="control">
-                <a className="button" href="https://github.com/AndreLewin" target="_blank">
+                <a className="button" href="https://github.com/AndreLewin/portfolio-2018-full" target="_blank">
                   <span className="icon">
                     <i className="fab fa-github"/>
                   </span>
