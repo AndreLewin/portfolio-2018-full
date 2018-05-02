@@ -4,10 +4,7 @@
   "description": "Portfolio of André Lewin 2018",
   "main": "server/index.js",
   "scripts": {
-    // Starts the express dev server
-    // Note: Presently, it uses webpack-dev-middleware
     "start": "node server/index.js",
-    // Build the final app on /public/ (when express is not needed for API requests)
     "build": "webpack -p"
   },
   "dependencies": {
