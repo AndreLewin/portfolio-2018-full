@@ -1,0 +1,11 @@
+.env
+.idea
+.git
+.DS_Store
+/*.log
+node_modules/
+/coverage/
+/lib/
+/assets/
+/dist/
+/public/app.js

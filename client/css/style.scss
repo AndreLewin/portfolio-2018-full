@@ -1,0 +1,133 @@
+//// Header
+// Change the navbar display to block
+// Overwrites Bulma, by default display become flex on high resolutions
+.navbar {
+  display: block;
+}
+
+// Make the icons always appear on the right
+.push-right {
+  display: block;
+  margin-left: auto;
+}
+
+// Reverse span for mail obfuscation
+span.reversed {
+  unicode-bidi: bidi-override;
+  direction: rtl;
+}
+
+// Hide text from buttons in header for small resolutions
+@media (max-width: 480px) {
+  #header {
+    .icon {
+      margin-right: calc(-0.375em - 1px);
+    }
+
+    .button-text {
+      display: none;
+    }
+  }
+}
+
+
+// Picture
+#picture-column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .picture {
+    border-radius: 15px 15px 15px 15px;
+    // picture
+    max-height: 537px;
+  }
+}
+
+
+// Buttons (skills)
+#buttons {
+  .wrap-centered {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  // Disable style change of outlined ones on hover
+  .button.is-primary.is-outlined:hover, .button.is-primary.is-outlined:focus {
+    cursor: default;
+    background-color: transparent;
+    border-color: #00d1b2;
+    color: #00d1b2;
+  }
+
+  .button.is-link.is-outlined:hover, .button.is-link.is-outlined:focus {
+    cursor: default;
+    background-color: transparent;
+    border-color: #3273dc;
+    color: #3273dc;
+  }
+
+  .button.is-success.is-outlined:hover, .button.is-success.is-outlined:focus {
+    cursor: default;
+    background-color: transparent;
+    border-color: #23d160;
+    color: #23d160;
+  }
+
+  .button.is-warning.is-outlined:hover, .button.is-warning.is-outlined:focus {
+    cursor: default;
+    background-color: transparent;
+    border-color: #ffdd57;
+    color: #ffdd57;
+  }
+
+  .button.is-info.is-outlined:hover, .button.is-info.is-outlined:focus {
+    cursor: default;
+    background-color: transparent;
+    border-color: #209cee;
+    color: #209cee;
+  }
+
+  .button:hover {
+    border-color: #dbdbdb;
+  }
+}
+
+//// Project
+// Image bordered
+.bordered {
+  border: 1px solid #dbdbdb;
+}
+
+// Cursor on image hover
+.pointer-hover {
+  cursor: pointer;
+}
+
+// Center the tags in the tag cloud (overwrites Bulma)
+.tags {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+
+//// Footer
+// Make it sticky (appear at the bottom of the page)
+// https://philipwalton.github.io/solved-by-flexbox/demos/sticky-footer/
+.Site {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.Site-content {
+  flex: 1;
+}
+
+// Color of the name
+.footer-name {
+  color: lightgray;
+}
